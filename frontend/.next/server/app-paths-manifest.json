@@ -1,0 +1,11 @@
+{
+  "/page": "app/page.js",
+  "/projects/[id]/page": "app/projects/[id]/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/admin-login/page": "app/admin-login/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/admin/portfolio/page": "app/admin/portfolio/page.js",
+  "/admin/projects/page": "app/admin/projects/page.js",
+  "/admin/enquiries/page": "app/admin/enquiries/page.js"
+}
