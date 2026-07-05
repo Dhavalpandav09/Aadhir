@@ -40,7 +40,7 @@ export default function ContactPage() {
           <Reveal delay={200}>
             <div className="w-full h-96 bg-zinc-100 dark:bg-zinc-800">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60340.35844574937!2d72.80155!3d19.059984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8866a456c55%3A0x3a1e4baa2b1a4093!2sBandra+West%2C+Mumbai!5e0!3m2!1sen!2sin!4v1614000000000!5m2!1sen!2sin"
+                src="https://maps.app.goo.gl/pCJQ6zyZCMdpiKiD9?g_st=it"
                 className="w-full h-full border-0" allowFullScreen loading="lazy" title="Studio Location" />
             </div>
           </Reveal>
