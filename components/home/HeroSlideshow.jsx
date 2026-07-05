@@ -3,16 +3,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getPhotos, getProjects } from '../../lib/api';
 
-const FALLBACK = [
-  { src: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1920', title: 'Golden Hour Vows',   category: 'Wedding'   },
-  { src: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1920', title: 'Avant-Garde',       category: 'Fashion'   },
-  { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920', title: 'Mountain Solitude', category: 'Nature'    },
-  { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1920', title: 'Eternal Promise',   category: 'Wedding'   },
-  { src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920', title: 'Soul Exposed',      category: 'Portraits' },
-];
-
 export default function HeroSlideshow() {
-  const [slides, setSlides]   = useState(FALLBACK);
+  const [slides, setSlides]   = useState([]);
   const [current, setCurrent] = useState(0);
   const [fade, setFade]       = useState(true);
 
@@ -42,14 +34,14 @@ export default function HeroSlideshow() {
     <section className="relative h-screen overflow-hidden bg-zinc-900">
       <div className={`absolute inset-0 transition-opacity duration-1000 ${fade ? 'opacity-100' : 'opacity-0'}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={s.src} alt={s.title} className="w-full h-full object-cover animate-slow-zoom" />
+        <img src={s?.src} alt={s?.title} className="w-full h-full object-cover animate-slow-zoom" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80" />
       </div>
 
       <div className="absolute top-24 left-8 z-10 hidden md:block">
         <div className={`transition-all duration-700 ${fade ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-          <span className="inline-block px-3 py-1 bg-amber-400/20 border border-amber-400/40 text-amber-300 text-[10px] tracking-[0.3em] uppercase backdrop-blur-sm">{s.category}</span>
-          <p className="text-white/50 text-xs mt-2">{s.title}</p>
+          <span className="inline-block px-3 py-1 bg-amber-400/20 border border-amber-400/40 text-amber-300 text-[10px] tracking-[0.3em] uppercase backdrop-blur-sm">{s?.category}</span>
+          <p className="text-white/50 text-xs mt-2">{s?.title}</p>
         </div>
       </div>
 
@@ -71,12 +63,12 @@ export default function HeroSlideshow() {
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3">
         <div className="flex gap-2">
-          {slides.map((_, i) => (
+          {slides?.map((_, i) => (
             <button key={i} onClick={() => { setCurrent(i); setFade(true); }}
               className={`h-0.5 transition-all duration-500 ${i === current ? 'w-10 bg-amber-400' : 'w-4 bg-white/40 hover:bg-white/70'}`} />
           ))}
         </div>
-        <span className="text-[10px] text-white/30 tracking-widest">{current + 1} / {slides.length}</span>
+        <span className="text-[10px] text-white/30 tracking-widest">{current + 1} / {slides?.length}</span>
       </div>
 
       <div className="absolute bottom-8 right-8 z-10 flex flex-col items-center gap-2 text-white/40">
