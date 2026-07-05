@@ -57,7 +57,7 @@ export default function HeroSlideshow() {
         <div style={{ animation: 'fadeUp 1.2s ease both', animationDelay: '0.3s' }}>
           <p className="text-xs tracking-[0.4em] uppercase text-amber-400 mb-4">Award-Winning Photography</p>
           <h1 className="font-serif text-5xl md:text-8xl font-bold leading-none mb-6">
-            Marcus<br /><span className="italic text-amber-300">Aurelius</span>
+            AADHIR<br /><span className="italic text-amber-300">FILMS</span>
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-xl mx-auto mb-10 font-light tracking-wide">
             Crafting timeless visual stories — from intimate weddings to grand fashion campaigns

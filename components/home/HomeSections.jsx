@@ -17,7 +17,7 @@ export function AboutSection() {
       <Reveal>
         <div className="relative">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600" alt="Marcus" className="w-full aspect-[3/4] object-cover" />
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600" alt="Aadhir" className="w-full aspect-[3/4] object-cover" />
           <div className="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-amber-400 -z-10" />
           <div className="absolute -top-6 -left-6 w-32 h-32 bg-amber-400/10 -z-10" />
         </div>
@@ -26,7 +26,7 @@ export function AboutSection() {
         <span className="section-label">About the Artist</span>
         <h2 className="font-serif text-4xl md:text-5xl font-bold mb-0">Every frame tells<br />a <em>story</em></h2>
         <Divider />
-        <p className="text-zinc-500 leading-relaxed mb-6">With over a decade behind the lens, Marcus Aurelius has built a reputation for capturing the unrepeatable — the tear before the vow, the laugh between takes, the last light on a mountain ridge. Based between Mumbai and Milan, he works globally.</p>
+        <p className="text-zinc-500 leading-relaxed mb-6">With over a decade behind the lens, Aadhir Films has built a reputation for capturing the unrepeatable — the tear before the vow, the laugh between takes, the last light on a mountain ridge. Based between Mumbai and Milan, he works globally.</p>
         <p className="text-zinc-500 leading-relaxed mb-8">Winner of the International Wedding Photography Award 2024 and featured in Vogue, Harper's Bazaar, and National Geographic.</p>
         <div className="grid grid-cols-3 gap-6 mb-8">
           {[['12+', 'Years'], ['800+', 'Projects'], ['50+', 'Countries']].map(([n, l]) => (
